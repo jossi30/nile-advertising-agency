@@ -15,7 +15,12 @@ export default function HeroSection() {
           At Nile, we transform clicks into connections that drive your business forward.
           </p>
         </div>
+        <div className="btn-container">
         <button className="btn btn-primary">Get In Touch</button>
+        <button className="btn btn-github">
+                Get A Free Trail Here
+          </button>
+        </div>
       </div>
       <div className="hero--section--img">
         <img src="./img/nile.png" alt="Hero Section" />

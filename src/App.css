@@ -82,7 +82,11 @@ p {
 }
 /* Global CSS Ends */
 /* Main Headings */
-
+.btn-container{ 
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 /* Heading 1 */
 h1 {
   font-size: 56px;
