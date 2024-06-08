@@ -114,7 +114,8 @@ export default function HeroSection() {
               </a>
             </li>
           </ul>
-        </div>
+        </div>  
     </section>
+    
   );
 }

@@ -34,8 +34,8 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div>
-        Nile
+      <div className="logo-name">
+        NILE
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -117,6 +117,7 @@ function Navbar() {
       >
         Contact Me
       </Link>
+      
     </nav>
   );
 }

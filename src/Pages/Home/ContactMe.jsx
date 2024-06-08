@@ -41,7 +41,7 @@ export default function ContactMe() {
   };
 
   if (isSubmitted) {
-    return <p>Thank you for your submission!</p>;
+    return <p className='thank-u'>Thank you , we will be contacting you shortly</p>;
   }
 
   return (

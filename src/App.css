@@ -82,6 +82,40 @@ p {
 }
 /* Global CSS Ends */
 
+.skills--section--card {
+  transition: transform 0.3s ease;
+}
+
+.skills--section--card:hover {
+  transform: scale(1.05);
+}
+
+.skills--section--card {
+  transition: transform 0.3s ease;
+}
+
+.skills--section--card:hover {
+  transform: scale(1.2);
+}
+
+.testimonial--section--card {
+  transition: transform 0.3s ease;
+}
+
+.testimonial--section--card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial--section--card {
+  transition: transform 0.3s ease;
+}
+
+.testimonial--section--card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Main Headings */
 .btn-container{ 
@@ -135,6 +169,18 @@ h2 {
 }
 
 /* Section Titles */
+.thank-u{
+  color: #5e3bee;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+}
+
+.logo-name{
+  color: #5e3bee;
+  font-weight: bolder;
+  font-size: x-large;
+}
 /* Skills & About Me */
 .section--title {
   color: var(--heading-color);
