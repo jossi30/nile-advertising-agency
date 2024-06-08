@@ -29,7 +29,7 @@ export default function HeroSection() {
           <ul>
             <li>
               <a
-                href="#"
+                href="#facebook"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -50,7 +50,7 @@ export default function HeroSection() {
             </li>
             <li>
               <a
-                href="#"
+                href="#upwork"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -71,7 +71,7 @@ export default function HeroSection() {
             </li>
             <li>
               <a
-                href="https://www.twitter.com/"
+                href="#twitter"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -92,7 +92,7 @@ export default function HeroSection() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/"
+                href="linkedin"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"

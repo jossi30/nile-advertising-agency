@@ -1,4 +1,49 @@
+import React, { useState } from 'react';
+
 export default function ContactMe() {
+  const [formState, setFormState] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    topic: '',
+    message: '',
+  });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormState((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    fetch('https://formspree.io/f/xyyrqryq', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formState),
+    })
+      .then((response) => {
+        if (response.ok) {
+          setIsSubmitted(true);
+        } else {
+          alert('There was a problem with your submission.');
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  };
+
+  if (isSubmitted) {
+    return <p>Thank you for your submission!</p>;
+  }
+
   return (
     <section id="Contact" className="contact--section">
       <div>
@@ -8,25 +53,29 @@ export default function ContactMe() {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
         </p>
       </div>
-      <form className="contact--form--container">
+      <form className="contact--form--container" onSubmit={handleSubmit}>
         <div className="container">
-          <label htmlFor="first-name" className="contact--label">
+          <label htmlFor="firstName" className="contact--label">
             <span className="text-md">First Name</span>
             <input
               type="text"
               className="contact--input text-md"
-              name="first-name"
-              id="first-name"
+              name="firstName"
+              id="firstName"
+              value={formState.firstName}
+              onChange={handleChange}
               required
             />
           </label>
-          <label htmlFor="last-name" className="contact--label">
+          <label htmlFor="lastName" className="contact--label">
             <span className="text-md">Last Name</span>
             <input
               type="text"
               className="contact--input text-md"
-              name="last-name"
-              id="last-name"
+              name="lastName"
+              id="lastName"
+              value={formState.lastName}
+              onChange={handleChange}
               required
             />
           </label>
@@ -37,27 +86,39 @@ export default function ContactMe() {
               className="contact--input text-md"
               name="email"
               id="email"
+              value={formState.email}
+              onChange={handleChange}
               required
             />
           </label>
-          <label htmlFor="phone-number" className="contact--label">
-            <span className="text-md">phone-number</span>
+          <label htmlFor="phoneNumber" className="contact--label">
+            <span className="text-md">Phone Number</span>
             <input
               type="number"
               className="contact--input text-md"
-              name="phone-number"
-              id="phone-number"
+              name="phoneNumber"
+              id="phoneNumber"
+              value={formState.phoneNumber}
+              onChange={handleChange}
               required
             />
           </label>
         </div>
-        <label htmlFor="choode-topic" className="contact--label">
+        <label htmlFor="topic" className="contact--label">
           <span className="text-md">Choose a topic</span>
-          <select id="choose-topic" className="contact--input text-md">
-            <option>Select One...</option>
-            <option>Item 1</option>
-            <option>Item 2</option>
-            <option>Item 3</option>
+          <select
+            id="topic"
+            className="contact--input text-md"
+            name="topic"
+            value={formState.topic}
+            onChange={handleChange}
+            required
+          >
+            <option value="" disabled>Select One...</option>
+            <option>Seo</option>
+            <option>Email Marketing</option>
+            <option>Brand Marketing</option>
+            
           </select>
         </label>
         <label htmlFor="message" className="contact--label">
@@ -65,12 +126,21 @@ export default function ContactMe() {
           <textarea
             className="contact--input text-md"
             id="message"
+            name="message"
             rows="8"
             placeholder="Type your message..."
+            value={formState.message}
+            onChange={handleChange}
+            required
           />
         </label>
-        <label htmlFor="checkboc" className="checkbox--label">
-          <input type="checkbox" required name="checkbox" id="checkbox" />
+        <label htmlFor="checkbox" className="checkbox--label">
+          <input
+            type="checkbox"
+            required
+            name="checkbox"
+            id="checkbox"
+          />
           <span className="text-sm">I accept the terms</span>
         </label>
         <div>
