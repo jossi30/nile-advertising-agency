@@ -116,6 +116,16 @@ p {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.portfolio--section--card {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.portfolio--section--card.pop-out {
+  opacity: 1;
+  transform: scale(1);
+}
 
 /* Main Headings */
 .btn-container{ 
@@ -370,6 +380,7 @@ h2 {
 .about--section--img > img {
   width: 100%;
   height: 100%;
+  border-radius: 50px;
 }
 /* About Us Ends */
 

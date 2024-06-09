@@ -1,6 +1,10 @@
-
+import React from 'react';
 
 export default function HeroSection() {
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="heroSection" className="hero--section">
       <div className="hero--section--content--box">
@@ -12,13 +16,15 @@ export default function HeroSection() {
             Agency
           </h1>
           <p className="hero--section-description">
-          At Nile, we transform clicks into connections that drive your business forward.
+            At Nile, we transform clicks into connections that drive your business forward.
           </p>
         </div>
         <div className="btn-container">
-        <button className="btn btn-primary">Get In Touch</button>
-        <button className="btn btn-github">
-                Get A Free Trail Here
+          <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>
+            Get In Touch
+          </button>
+          <button className="btn btn-github" onClick={() => scrollToSection('free-trail')}>
+            Get A Free Trial Here
           </button>
         </div>
       </div>
@@ -29,7 +35,7 @@ export default function HeroSection() {
           <ul>
             <li>
               <a
-                href="#facebook"
+                href="https://www.facebook.com/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -49,7 +55,7 @@ export default function HeroSection() {
               </a>
             </li>
             <li>
-              <a
+            <a
                 href="#upwork"
                 className="navbar--content"
                 target="_blank"
@@ -71,7 +77,7 @@ export default function HeroSection() {
             </li>
             <li>
               <a
-                href="#twitter"
+                href="https://www.twitter.com/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -92,7 +98,7 @@ export default function HeroSection() {
             </li>
             <li>
               <a
-                href="linkedin"
+                href="https://www.linkedin.com/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -114,8 +120,7 @@ export default function HeroSection() {
               </a>
             </li>
           </ul>
-        </div>  
+        </div>
     </section>
-    
   );
 }

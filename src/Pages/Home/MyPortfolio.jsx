@@ -1,6 +1,35 @@
+import React, { useEffect, useRef } from "react";
 import data from "../../data/index.json";
 
 export default function MyPortfolio() {
+  const portfolioRef = useRef();
+
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('pop-out');
+          } else {
+            entry.target.classList.remove('pop-out');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const cards = portfolioRef.current.querySelectorAll('.portfolio--section--card');
+    cards.forEach(card => observer.observe(card));
+
+    return () => {
+      cards.forEach(card => observer.unobserve(card));
+    };
+  }, []);
+
   return (
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
@@ -9,12 +38,12 @@ export default function MyPortfolio() {
           <h2 className="section--heading">My Portfolio</h2>
         </div>
         <div>
-          <button className="btn btn-github">
-                  Get Free Trail Here
+          <button className="btn btn-github" onClick={() => scrollToSection('free-trail')}>
+            Get Free Trail Here
           </button>
         </div>
       </div>
-      <div className="portfolio--section--container">
+      <div className="portfolio--section--container" ref={portfolioRef}>
         {data?.portfolio?.map((item, index) => (
           <div key={index} className="portfolio--section--card">
             <div className="portfolio--section--img">
@@ -25,24 +54,7 @@ export default function MyPortfolio() {
                 <h3 className="portfolio--section--title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
-              <p className="text-sm portfolio--link">
-                {item.link}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 20 19"
-                  fill="none"
-                >
-                  <path
-                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-                    stroke="currentColor"
-                    stroke-width="2.66667"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </p>
+              
             </div>
           </div>
         ))}
