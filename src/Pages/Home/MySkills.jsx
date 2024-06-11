@@ -1,7 +1,11 @@
 import data from "../../data/index.json";
 
-
 export default function MySkills() {
+
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="skills--section" id="mySkills">
       <div className="portfolio--container">
@@ -12,7 +16,7 @@ export default function MySkills() {
         {data?.skills?.map((item, index) => (
           <div key={index} className="skills--section--card">
             <div className="skills--section--img">
-              <img src={item.src} alt="Product Chain" />
+              <img src={item.src} alt={item.title} />
             </div>
             <div className="skills--section--card--content">
               <h3 className="skills--section--title">{item.title}</h3>
@@ -20,7 +24,11 @@ export default function MySkills() {
             </div>
           </div>
         ))}
+        
       </div>
+      <button className="btn btn-github" onClick={() => scrollToSection('free-trail')}>
+            Click Here For FREE Trail
+          </button>
     </section>
   );
 }
