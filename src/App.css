@@ -314,22 +314,15 @@ h2 {
   line-height: 77px;
 }
 .skills--section--container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  gap: 42.6px;
-  grid-template-columns: repeat(4, 1fr);
+  
 }
 .skills--section--card {
-  display: flex;
-  padding: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  flex: 1 0 0;
-  border-radius: 10.6px;
-  background: var(--bg-shade);
-  min-height: 250px;
+  flex: 1 1 30%;
+  max-width: 30%;
+  margin: 1%;
 }
 .skills--section--card:hover {
   border-bottom: 4px solid var(--primary);
@@ -337,12 +330,19 @@ h2 {
 .skills--section--card:hover .skills--section--description {
   color: var(--darkblue);
 }
+
+.skills--section--container .skills--section--card:nth-child(n+4) {
+  max-width: 45%;
+}
+
 .skills--section--img {
   display: flex;
-  padding: 13.3px;
+  
   justify-content: center;
-  align-items: center;
+  
   gap: 13.3px;
+  width: 250px;
+  height: 250px;
   border-radius: 10.6px;
   background: #fff;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
@@ -356,13 +356,13 @@ h2 {
 }
 .skills--section--title {
   color: var(--heading-color);
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 45px;
 }
 .skills--section--description {
   color: var(--black);
-  font-size: 21.3px;
+  font-size: 5px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;

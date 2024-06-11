@@ -2,27 +2,33 @@
   "skills": [
     {
       "id": "1",
-      "src": "./img/product-chain-1.png",
-      "title": "Social media marketing",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/Email marketing.png",
+      "title": "Email Marketing",
+      "description": "At Nile marketing agency, we provide tailored email marketing solutions designed for small business owners. Our services focus on creating personalized, eye-catching emails that engage your audience and drive results. From promotional offers to newsletters, we help you connect with your customers, build brand loyalty, and increase sales. Let us handle your email marketing so you can focus on growing your business."
     },
     {
       "id": "2",
-      "src": "./img/tag-1.png",
-      "title": "Email marketing",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/Text marketing.png",
+      "title": "Text Marketing",
+      "description": "At Nile marketing agency, we offer effective text marketing services tailored for small business owners. Our strategies help you reach your customers directly through personalized SMS campaigns that drive engagement and prompt action. Whether it's promotional offers, reminders, or updates, our text marketing solutions ensure your messages are seen and acted upon. Enhance your customer communication and boost your business growth with our targeted text marketing services."
     },
     {
       "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "SEO",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/lead generation.png",
+      "title": "Lead Generation",
+      "description": "At Nile marketing agency, we specialize in lead generation solutions tailored for small business owners. Our strategies are designed to attract, engage, and convert potential customers into loyal clients. Using a mix of targeted campaigns, compelling content, and advanced analytics, we help you generate high-quality leads that fuel your business growth. Let us help you expand your customer base and achieve your business goals with our expert lead generation services."
     },
     { 
       "id": "4",
-      "src": "./img/feather-pen-1.png",
-      "title": "Brand management",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/reputation management.png",
+      "title": "Reputation Management",
+      "description": "At Nile marketing agency, we offer comprehensive reputation management services tailored for small business owners. We help you build and maintain a positive online presence by monitoring reviews, managing feedback, and implementing strategies to enhance your brand's image. Our expert team works diligently to ensure your business is seen in the best light, fostering trust and loyalty among your customers. Let us protect and enhance your reputation, so you can focus on running your business."
+    },
+    {
+      "id": "5",
+      "src": "./img/SEO.png",
+      "title": "SEO",
+      "description": "At Nile marketing agency, we provide specialized SEO services designed for small business owners. Our expert team optimizes your website to improve search engine rankings, drive organic traffic, and increase visibility. By using proven strategies and the latest SEO techniques, we help your business get found by potential customers. Boost your online presence and grow your business with our tailored SEO solutions."
     }
     
   ],
