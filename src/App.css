@@ -17,7 +17,8 @@ p {
   margin: 0;
 }
 :root {
-  --primary: #5e3bee;
+  --primary: #224e87;
+  --secondary:#477cb7;
   --heading-color: #282938;
   --bg-shade: #f5fcff;
   --github: #e62872;
@@ -180,14 +181,14 @@ h2 {
 
 /* Section Titles */
 .thank-u{
-  color: #5e3bee;
+  color: #477cb7;
   display: flex;
   justify-content: center;
   font-size: large;
 }
 
 .logo-name{
-  color: #5e3bee;
+  color: #477cb7;
   font-weight: bolder;
   font-size: x-large;
 }
@@ -244,7 +245,7 @@ h2 {
   cursor: pointer;
 }
 .navbar--active-content {
-  color: var(--primary);
+  color: var(--secondary);
 }
 /* Navbar Styler Ends */
 
@@ -256,7 +257,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  background-color: var(--bg-shade);
+  background-color: var(--white);
 }
 .hero--section--content-box {
   display: flex;
@@ -306,6 +307,7 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   gap: 106.667px;
+  background-color: var(--bg-shade);
 }
 .skills--section--heading {
   color: var(--heading-color);
