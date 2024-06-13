@@ -54,16 +54,16 @@ export default function ContactMe() {
       <div>
         {!isFormVisible && (
           <button onClick={handleShowForm} className="btn btn-github">
-            Click Here to Sign Up for a free trail
+            Click Here to Sign Up for a <b>FREE Trail</b>
           </button>
         )}
         {isFormVisible && (
           <>
             <div>
-              <p className="sub--title">Fill the form to get a</p>
-              <h2>Free Trail</h2>
+              <p className="sub--title">Sign up for a</p>
+              <h2>FREE Trail</h2>
               <p className="text-lg">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
+               .
               </p>
             </div>
             <form className="contact--form--container" onSubmit={handleSubmit}>

@@ -5,9 +5,9 @@ export default function ContactMe() {
     <section id="contact" className="contact--section">
       <div>
         <p className="sub--title">Get In Touch</p>
-        <h2>Contact Me</h2>
+        <h2>Contact Us</h2>
         <p className="text-lg">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
+        Contact us for any questions or to learn more about our services!
         </p>
       </div>
       <form className="contact--form--container">
