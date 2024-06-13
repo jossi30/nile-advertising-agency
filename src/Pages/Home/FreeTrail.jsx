@@ -116,7 +116,7 @@ export default function ContactMe() {
                     required
                   />
                 </label>
-              </div>
+                </div>
               <label htmlFor="topic" className="contact--label">
                 <span className="text-md">Choose a topic</span>
                 <select
@@ -128,9 +128,8 @@ export default function ContactMe() {
                   required
                 >
                   <option value="" disabled>Select One...</option>
-                  <option>Seo</option>
                   <option>Email Marketing</option>
-                  <option>Brand Marketing</option>
+                  <option>Text Marketing</option>
                 </select>
               </label>
               <label htmlFor="message" className="contact--label">
