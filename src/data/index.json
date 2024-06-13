@@ -60,25 +60,25 @@
       "id": "1",
       "count": "5",
       "src": "./img/avatar-image.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Dianne Russel",
-      "author_designation": "Starbucks"
+      "description": "I recently signed up for the free trial at Nile Marketing Agency to test out their email marketing and text marketing services, and I am beyond impressed! The platform is incredibly user-friendly and the tools are powerful. Within just a few days, I saw a significant increase in engagement from my email campaigns. The text marketing feature is also top-notch, allowing me to reach my customers instantly with special offers and updates. I highly recommend Nile to anyone looking to boost their digital marketing efforts!",
+      "author_name": "Michael Johnson",
+      "author_designation": ""
     },
     {
       "id": "2",
       "count": "5",
       "src": "./img/avatar-image-1.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Kristin Watson",
-      "author_designation": "Louis Vuitton"
+      "description": "As a small business owner, finding affordable and effective marketing tools is crucial. Nile Marketing Agency's free trial for email and text marketing has been phenomenal. Their lead generation tool is particularly impressive, helping me reach potential customers more effectively. Though their SEO and reputation management services aren't included in the free trial, I'm considering upgrading due to the outstanding results. Thank you, Nile!",
+      "author_name": "John Thompson",
+      "author_designation": ""
     },
     {
       "id": "3",
       "count": "5",
       "src": "./img/avatar-image-2.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Kathryn Murphy",
-      "author_designation": "McDonald's"
+      "description": "Nile Marketing Agency has been a game-changer for my marketing strategy. Their free trial for email and text marketing is easy to set up and offers valuable analytics on audience behavior. The lead generation tool provides high-quality leads that convert into real business.Though I haven't tried their SEO and reputation management services yet, my success so far makes me confident they'll be equally effective. For reliable digital marketing solutions, Nile is the way to go!",
+      "author_name": "David Miller",
+      "author_designation": ""
     }
   ]
 }
