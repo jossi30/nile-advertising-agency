@@ -9,7 +9,7 @@ Welcome to the official portfolio page of Nile Digital Marketing Agency. This pr
 </div>
 
 <div align="center">
-  <img alt="Demo" src="./Images/readme2.png" />
+  <img alt="Demo" src="./Images/Screenshot from 2024-06-18 16-41-09.png" />
 </div>
 
 ## Installation and Setup Instructions
