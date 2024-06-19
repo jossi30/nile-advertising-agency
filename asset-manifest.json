@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nile-advertising-agency/static/css/main.20f14044.css",
+    "main.js": "/nile-advertising-agency/static/js/main.bc486c92.js",
+    "index.html": "/nile-advertising-agency/index.html",
+    "main.20f14044.css.map": "/nile-advertising-agency/static/css/main.20f14044.css.map",
+    "main.bc486c92.js.map": "/nile-advertising-agency/static/js/main.bc486c92.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20f14044.css",
+    "static/js/main.bc486c92.js"
+  ]
+}
