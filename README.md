@@ -38,7 +38,6 @@ To Visit App:
 - React: JavaScript library for building user interfaces
 - Framer Motion: For animations and transitions
 - CSS Modules: For scoped and modular CSS
-- Vite: Next Generation Frontend Tooling for faster builds
 - React Router: For navigation and routing
 - React Icons: For icons
 - formspree: For handling contact form submission 
